@@ -26,7 +26,7 @@ function App() {
     <li className="cursor-pointer">Explore</li>
     <li className="cursor-pointer">Genres</li>
     <li className="cursor-pointer">Movies</li>
-    <li className="cursor-pointer">Movie</li>
+    <li className="cursor-pointer">News</li>
     <li className="cursor-pointer">TV Shows</li>
   </ul>
 </nav>
