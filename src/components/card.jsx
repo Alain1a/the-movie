@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function card({ title, price, vote, popula, image }) {
+export default function Card({ title, price, vote, popula, image }) {
   
   return (
       <div>
