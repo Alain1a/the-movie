@@ -1,0 +1,34 @@
+.Nav{
+  .className {
+    display: flex;
+    flex-direction: column;
+    /* For medium-sized screens and above, flex-direction becomes row */
+  }
+  .md\:flex-row {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .py-4 {
+    /* Adjust padding as needed */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .px-6 {
+    /* Adjust padding as needed */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .bg-black-800 {
+    /* Adjust color as needed */
+    background-color: #181818;
+  }
+  .text-white {
+    color: #ffffff;
+  }
+  
+} 

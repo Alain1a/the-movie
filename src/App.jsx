@@ -15,7 +15,7 @@ import SignUp from './components/signup';
 function App() {
   return (
     <BrowserRouter>
-      <nav className="flex flex-col md:flex-row items-center justify-between py-4 px-6 bg-black text-white">
+      <nav className="flex flex-col md:flex-row-invisible items-center justify-between py-4 px-6 bg-black text-white sm:grid-cols-2-envisible md:grid-colos-5 xl:grid-cols-8  ">
         <div className='flex items-center'>
           <img src={small} alt="Small Logo" className="w-10 h-10" />
           <img src={movie} alt="Movie Logo" className="ml-5" />

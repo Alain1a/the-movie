@@ -63,7 +63,7 @@ function Home() {
 
         </div>
         <div className='flex justify-between items-center mt-20'>
-          <div className='flex items-center gap-2'>
+          <div className='flex items-center'>
             <img
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqXRK8_wJi9Yu4QwFtBBFc67dLtvkF3cEqWNOorheD2CcZlJy"
               alt="Trending Icon"
@@ -74,7 +74,7 @@ function Home() {
           <span className='w-full h-[0.10px] bg-gray-500'></span>
           <button>SeeMore</button>
         </div>
-        <div className='grid grid-cols-10 flex mx-auto bg-black rounded-20 text-white h-92'>
+        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10'>
           {movies.map((movie, index) => (
             <div key={index} className='cursor-pointer' onClick={() => {
               setSelectedMovie(movie.id)
@@ -91,27 +91,14 @@ function Home() {
           ))}
         </div>
         <div className='flex justify-between items-center mt-10'>
-          <div className='flex items-center gap-2'>
-
+          <div className='flex items-center '>
             <h3>YOU MAY LIKE THIS</h3>
           </div>
           <span className='w-full h-[0.10px] bg-gray-500'></span>
           <button>SeeMore</button>
         </div>
-        <div className='grid grid-cols-10 gap-1 px-10 flex mx-auto bg-black rounded-20 text-white h-92 mt-30'>
-          {movie.map((movie, index) => (
-            <div key={index} className='cursor-pointer' onClick={() => {
-              setSelectedMovie(movie.id)
-            }}>
-              <NavLink to={`/detail/${movie.id}`}>
-                <Card
-                  title={movie.original_title}
-                  image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  vote={movie.vote_average}
-                />
-              </NavLink>
-            </div>
-          ))}
+        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10'>
+         
         </div>
        
       </div>

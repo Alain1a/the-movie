@@ -32,9 +32,10 @@ function SearchPage() {
     <div className="p-4 bg-black">
       <form>
       <input
-        type="text"
+        type="search"
         value={searchQuery}
         onChange={handleInputChange}
+        className='text-white w-full justfy-center bg-gray-700'
         placeholder="Search..."
       />
       </form>

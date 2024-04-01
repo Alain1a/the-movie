@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import YouTubeIframe from 'react-youtube-iframe';
+import YouTube from 'react-youtube';
 
 
 function Fullmovies() {
@@ -21,9 +21,9 @@ function Fullmovies() {
     console.log(movieKey.key)
     return (
         <p>
-            {/* <Login/> */}
             
-            <YouTubeIframe videoId={`${movieKey.key}`} />
+            
+            <YouTube videoId={`${movieKey.key}`} />
     
         </p>
     )
