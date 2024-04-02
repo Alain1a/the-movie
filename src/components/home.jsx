@@ -36,14 +36,14 @@ function Home() {
   }, []);
 
 
- 
+
   return (
     <>
       <div className='mt-20 ml-'>
         <div className='mr-40'>
         </div>
         <div className='flex'>
-          <div className='space-y-4 myclass'>
+          <div className='space-y-4'>
             <h2 className='text-4xl font-bold text-blue-500 bg-white-400'>FIND MOVIES</h2>
             <div>
               <h1 className='text-4xl font-bold text-blue-500 bg-white-400'>TV SHOW AND MORE</h1>
@@ -54,10 +54,12 @@ function Home() {
               <span>Watch TV Show</span>
             </button>
           </div>
-          <div className="w-[500px] relative flex">
-            <div className='absolute w-30'><img src={front} alt="" className='absolute top-0 bottom-0 my-auto' />
+          <div className="w-[700px] relative flex">
+            <div className='absolute right-1 w-40 mt-5'>
+              <img src={front} alt="" className='w-full max-w-xl'/>
             </div>
-            <div className='absolute w-50'> <img src={back} alt="" />
+            <div className='absolute right-10 w-40'>
+              <img src={back} alt="" className='w-full max-w-xl'/>
             </div>
           </div>
 
@@ -98,9 +100,21 @@ function Home() {
           <button>SeeMore</button>
         </div>
         <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10'>
-         
+          {movie.map((movie, index) => (
+            <div key={index} className='cursor-pointer' onClick={() => {
+              setSelectedMovie(movie.id)
+            }}>
+              <NavLink to={`/detail/${movie.id}`}>
+                <Card
+                  title={movie.original_title}
+                  image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  vote={movie.vote_average}
+                />
+              </NavLink>
+            </div>
+          ))}
         </div>
-       
+
       </div>
     </>
   );

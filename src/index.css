@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  
-  
   min-width: 320px;
   min-height: 100vh;
   background-color: black;
@@ -18,4 +15,3 @@ h1 {
   -webkit-text-fill-color: transparent;
   -text-fill-color: transparent;
 }
-
