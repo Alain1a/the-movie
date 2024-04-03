@@ -31,13 +31,14 @@ function Details() {
     }
 
     return (
-        <div className="container mx-auto px-4 cover">
-            <NavLink to={`/movies/${data.id}`} className="flex justify-center items-center">
-                <div className="w-40 h-60 bg-black rounded-md overflow-hidden shadow-md mr-4 center">
-                    <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}  className="w-92 h-92 object-cover "  alt={data.original_title} />
+        <div className="w-full h-full">
+            <NavLink to={`/movies/${data.id}`} className="h-full w-full  ">
+                <div className="w-40 h-full">
+                    <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}  className=" h-full "  alt={data.original_title} />
                 </div>
-                <p  className="text-xl font-semibold mb-2">{data.original_title}</p>
+                <p  className="text-xl font-semibold mb-2 h-full">{data.original_title}</p>
             </NavLink>
+            
         </div>
     )
 }

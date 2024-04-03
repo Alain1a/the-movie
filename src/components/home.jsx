@@ -54,17 +54,17 @@ function Home() {
               <span>Watch TV Show</span>
             </button>
           </div>
-          <div className="w-[700px] relative flex">
-            <div className='absolute right-1 w-40 mt-5'>
-              <img src={front} alt="" className='w-full max-w-xl'/>
+          <div className='w-1/2 text-white relative'>
+            <div className='w-[300px] rounded-[20px] absolute top-20 right-[40px]'>
+              <img src={back} alt="" className='w-full h-full rounded-[20px]' />
             </div>
-            <div className='absolute right-10 w-40'>
-              <img src={back} alt="" className='w-full max-w-xl'/>
+            <div className='w-[300px] rounded-[20px] absolute bottom-25 left-[200px]'>
+              <img src={front} alt="" className='w-full h-full rounded-[20px]' />
             </div>
           </div>
 
         </div>
-        <div className='flex justify-between items-center mt-20'>
+        <div className='flex justify-between items-center mt-10'>
           <div className='flex items-center'>
             <img
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqXRK8_wJi9Yu4QwFtBBFc67dLtvkF3cEqWNOorheD2CcZlJy"
@@ -76,7 +76,7 @@ function Home() {
           <span className='w-full h-[0.10px] bg-gray-500'></span>
           <button>SeeMore</button>
         </div>
-        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10'>
+        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10 mt-20'>
           {movies.map((movie, index) => (
             <div key={index} className='cursor-pointer' onClick={() => {
               setSelectedMovie(movie.id)
