@@ -39,6 +39,14 @@ function Home() {
 
   return (
     <>
+          <div className='w-1/2 text-white relative ml-[400px]'>
+            <div className='w-[300px] rounded-[20px] absolute top-[50px] right-[60px]'>
+              <img src={back} alt="" className='w-[250px] h-[400px] rounded-[20px]' />
+            </div>
+            <div className='w-[300px] rounded-[20px] absolute bottom-25  left-[300px]'>
+              <img src={front} alt="" className='w-[250px] h-[400px] rounded-[20px] mb-20' />
+            </div>
+          </div>
       <div className='mt-20 ml-'>
         <div className='mr-40'>
         </div>
@@ -54,17 +62,9 @@ function Home() {
               <span>Watch TV Show</span>
             </button>
           </div>
-          <div className='w-1/2 text-white relative'>
-            <div className='w-[300px] rounded-[20px] absolute top-20 right-[40px]'>
-              <img src={back} alt="" className='w-full h-full rounded-[20px]' />
-            </div>
-            <div className='w-[300px] rounded-[20px] absolute bottom-25 left-[200px]'>
-              <img src={front} alt="" className='w-full h-full rounded-[20px]' />
-            </div>
-          </div>
 
         </div>
-        <div className='flex justify-between items-center mt-10'>
+        <div className='flex justify-between items-center'>
           <div className='flex items-center'>
             <img
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqXRK8_wJi9Yu4QwFtBBFc67dLtvkF3cEqWNOorheD2CcZlJy"
@@ -73,7 +73,7 @@ function Home() {
             />
             <h3>Treanding</h3>
           </div>
-          <span className='w-full h-[0.10px] bg-gray-500'></span>
+          <span className='w-full h-[0.10px] bg-gray-500 '></span>
           <button>SeeMore</button>
         </div>
         <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10 mt-20'>
