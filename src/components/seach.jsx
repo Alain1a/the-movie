@@ -35,7 +35,7 @@ function SearchPage() {
         type="search"
         value={searchQuery}
         onChange={handleInputChange}
-        className='text-white w-full justfy-center bg-gray-700'
+        className='text-white w-50 border-color-pink justfy-center ml- mt-20 border border-blue-500'
         placeholder="Search..."
       />
       </form>

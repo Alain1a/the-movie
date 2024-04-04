@@ -39,14 +39,14 @@ function Home() {
 
   return (
     <>
-          <div className='w-1/2 text-white relative ml-[400px]'>
-            <div className='w-[300px] rounded-[20px] absolute top-[50px] right-[60px]'>
-              <img src={back} alt="" className='w-[250px] h-[400px] rounded-[20px]' />
-            </div>
-            <div className='w-[300px] rounded-[20px] absolute bottom-25  left-[300px]'>
-              <img src={front} alt="" className='w-[250px] h-[400px] rounded-[20px] mb-20' />
-            </div>
-          </div>
+      <div className='w-1/2 text-white relative ml-[400px]'>
+        <div className='w-[300px] rounded-[20px] absolute top-[50px] right-[60px]'>
+          <img src={back} alt="" className='w-[250px] h-[400px] rounded-[20px]' />
+        </div>
+        <div className='w-[300px] rounded-[20px] absolute bottom-25  left-[300px]'>
+          <img src={front} alt="" className='w-[250px] h-[400px] rounded-[20px] mb-20' />
+        </div>
+      </div>
       <div className='mt-20 ml-'>
         <div className='mr-40'>
         </div>
@@ -64,19 +64,19 @@ function Home() {
           </div>
 
         </div>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center mt-36'>
           <div className='flex items-center'>
             <img
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqXRK8_wJi9Yu4QwFtBBFc67dLtvkF3cEqWNOorheD2CcZlJy"
               alt="Trending Icon"
               className="w-8 h-8 rounded-full"
             />
-            <h3>Treanding</h3>
+            <h3 className='text-white'>Treanding</h3>
           </div>
-          <span className='w-full h-[0.10px] bg-gray-500 '></span>
-          <button>SeeMore</button>
+          <span className='w-full h-[0.10px] bg-gray-500'></span>
+          <button className='text-white'>SeeMore</button>
         </div>
-        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10 mt-20'>
+        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-10 mt-5'>
           {movies.map((movie, index) => (
             <div key={index} className='cursor-pointer' onClick={() => {
               setSelectedMovie(movie.id)
@@ -94,12 +94,12 @@ function Home() {
         </div>
         <div className='flex justify-between items-center mt-10'>
           <div className='flex items-center '>
-            <h3>YOU MAY LIKE THIS</h3>
+            <h3 className='text-white'>YOU MAY LIKE THIS</h3>
           </div>
           <span className='w-full h-[0.10px] bg-gray-500'></span>
-          <button>SeeMore</button>
+          <button className='text-white'>SeeMore</button>
         </div>
-        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-3 md:grid-cols-6 xl:grid-cols-10'>
+        <div className='grid grid-cols-1 flex mx-auto bg-black rounded-20 text-white h-92 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-10 mt-30'>
           {movie.map((movie, index) => (
             <div key={index} className='cursor-pointer' onClick={() => {
               setSelectedMovie(movie.id)

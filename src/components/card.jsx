@@ -4,8 +4,8 @@ import React from "react";
 export default function Card({ title, price, vote, popula, image }) {
   
   return (
-      <div>
-        <img src={image} className='w-24 mt-20 ' alt="movie poster" />
+      <div className="">
+        <img src={image} className='w-30 ' alt="movie poster" />
         <p>{title}</p>
         <p>{price}</p>
         <p>{vote}</p>

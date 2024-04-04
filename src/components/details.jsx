@@ -31,7 +31,7 @@ function Details() {
     }
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full flex fustfy-center">
             <NavLink to={`/movies/${data.id}`} className="h-full w-full  ">
                 <div className="w-40 h-full">
                     <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}  className=" h-full "  alt={data.original_title} />

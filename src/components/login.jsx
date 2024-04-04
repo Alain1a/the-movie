@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     console.log(data)
     if(localStorage.setItem('userdata',JSON.stringify(email))){
-        window.location.href="/"
+        window.location.href="/fullmovie"
     }
    
    }
